@@ -72,7 +72,8 @@ void Sla::call(string fname)
     lua_settop(stat, 0);
     lua_getglobal(stat, fname.c_str());
 
-    for (int i=0; i < (int)pams.size(); i++)
+    int pamsSize = pams.size();
+    for (int i=0; i < pamsSize; i++)
     {
         if (pamsType[i] == 1) pushParam(getIntParam(i));
         else pushParam(getStrParam(i, 2));
@@ -93,12 +94,12 @@ void Sla::setParamType(string *str)
     pamsType.push_back(2);
 }
 
-int Sla::getIntParam(int row)
+inline int Sla::getIntParam(int row)
 {
     return *(int*)pams[row];
 }
 
-string Sla::getStrParam(int row, int type)
+inline string Sla::getStrParam(int row, int type)
 {
     return *(string*)pams[row];
 }
