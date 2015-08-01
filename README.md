@@ -7,6 +7,8 @@ Whith Sla, you can:
 - Send parameters to a lua function
 - Make complex lua operation, directly by writing lua code. 
 
+This project is under developement. 
+
 This project is available under the GNU General Public License.
 By using this project, you're agree to the GNU GPL. 
 More information about it available here: https://github.com/rangerprice/simplified-lua-api/blob/master/LICENSE
