@@ -13,6 +13,6 @@ auto get(const std::string &table, const int &indice) noexcept
     lua_pushnumber(context, indice);
     lua_gettable(context, -2);
 
-    return lua_tostring(context, 1);
+    return lua_tostring(context, -1);
 }
 
