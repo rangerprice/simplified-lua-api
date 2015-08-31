@@ -3,10 +3,8 @@
 #define SLACORE_HPP
 
 #include <string>
-#include <cassert>
 #include <functional>
 #include <map>
-#include <cstdarg>
 
 extern "C" {
 #include <lua.h>
@@ -15,8 +13,6 @@ extern "C" {
 #include <stdlib.h>
 }
 #include <iostream>
-
-#define END NULL
 
 class SlaCore
 {
