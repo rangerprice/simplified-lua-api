@@ -11,7 +11,7 @@ class Sla final : public SlaCore
 
         Sla(const std::string&, const bool& = true);
         bool open(const std::string&, const bool& = true) noexcept;
-        inline void exec(const std::string&) const noexcept;
+        void exec(const std::string&) const noexcept;
         #include "../template/sla.tpl.cpp"
 
 };
